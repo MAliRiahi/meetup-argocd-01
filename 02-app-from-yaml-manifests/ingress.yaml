@@ -10,7 +10,9 @@ spec:
     - host: sample.docker.internal
       http:
         paths:
-          - backend:
+          - path: /
+            pathType: Prefix
+            backend:
               service:
                 name: sample-service
                 port:
