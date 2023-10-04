@@ -5,7 +5,7 @@ metadata:
   name: sample-ingress
 spec:
   rules:
-    - host: view-localhost
+    - host: sample.docker.internal
       http:
         paths:
           - path: /
